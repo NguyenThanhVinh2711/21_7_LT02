@@ -5,6 +5,21 @@
     <title>Title</title>
 </head>
 <body>
-
+<script>
+    function element(a,b,c) {
+        min=a
+        if(b>a && c>a){
+            return min
+        }else if(b<c){
+            return b
+        }else {
+            return c
+        }
+    }
+    let a=prompt("Nhập số a")
+    let b=prompt("Nhập số b")
+    let c=prompt("Nhập số c")
+    alert("Số nhỏ nhất là : "  + element(a,b,c))
+</script>
 </body>
 </html>
